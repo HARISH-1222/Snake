@@ -36,20 +36,29 @@ window.onload = (()=>{
     changeFood();
     
     up_btn.addEventListener("click",()=>{
+        if(velocityY != 1){
         velocityX = 0;
         velocityY = -1;
+        }
     });
     left_btn.addEventListener("click",()=>{
+        if(velocityX != -1){
         velocityX = 1;
         velocityY = 0;
+        }
     });
     down_btn.addEventListener("click",()=>{
+
+        if(velocityY != -1){
         velocityX = 0;
         velocityY = 1;
+        }
     });
     right_btn.addEventListener("click",()=>{
+        if(velocityX != 1){
         velocityX = -1;
         velocityY = 0;
+        }
     });
     
     document.addEventListener("keydown",moveFun);
