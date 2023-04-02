@@ -10,9 +10,9 @@ body{
 .btn-continer{
     border: 2px solid red;
     height: 10vh;
-    width: 10%;
+    width: 150px;
     position: absolute;
-    left: 40%;
+    left: 44%;
 }
 
 button{
